@@ -171,5 +171,5 @@ def delete_student(student_id: int,db: Session = Depends(get_db)):
     return ApiResponse(
         statusCode= status.HTTP_200_OK,
         message="Đã xóa sinh viên thành công",
-        data=delete_std
+        data=None
     )
